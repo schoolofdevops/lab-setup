@@ -73,23 +73,23 @@ This will create a file in your current directory with name vagrantfile.
   
    [http://windows.github.com.]() 
    
-###4.Atom Editor:-
+###4. Atom Editor:-
 
-1.To download Atom editor visit 
+1. To download Atom editor visit 
   
-  [https://atom.io/]()
+   [https://atom.io/]()
   
-  select your package depends on your system from more packages & download appropriate one.
+   select your package depends on your system from more packages & download appropriate one.
   
-  **for windows direct executable:-**
+   **for windows direct executable:-**
   
-  [https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe]()
+   [https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe]()
     
-  **windows zip package:-**
+   **windows zip package:-**
     
    [https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip]()
     
- **mac zip package:-**
+   **mac zip package:-**
  
    [https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip]()
    
@@ -101,6 +101,7 @@ This will create a file in your current directory with name vagrantfile.
 
   exe package:-
  [http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe]()
+ 
  zip package:-
  [http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z]()       
    
