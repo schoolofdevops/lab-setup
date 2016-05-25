@@ -1,4 +1,4 @@
-#Lab setup instructions
+#Lab Setup Instructions
 
 ###Requires:-
 **1.Virtualbox**
@@ -46,10 +46,11 @@ This will create a file in your current directory with name vagrantfile.
    
    `vagrant init ubuntu/trusty64`
    
-this will install our base box image. once its done check your vagrantfile ,you will notice it add base box there.
+  this will install our base box image. once its done     check your vagrantfile ,you will notice it add base box there.
 7. Now its time to run your machine, enter command
   
    `vagrant up`
+ 
  this will spin up your vm.
  
 8. Now you can logged in into your machine with command
@@ -68,29 +69,29 @@ this will install our base box image. once its done check your vagrantfile ,you 
    
    this will directly start download git for windows.
    
-2. Other way is to download github which provide both GUI & command line interface. It aslo work well with powershell. you can download github from here 
+2. Other way is to download github which provide both GUI & command line interface. It aslo work well with powershell. you can download github from here -
   
    [http://windows.github.com.]() 
    
 ###4. Atom Editor:-
 
-1.To download Atom editor visit 
+1. To download Atom editor visit 
   
-  `https://atom.io/`
+   [https://atom.io/]()
   
-  select your package depends on your system from more packages & download appropriate one.
+   select your package depends on your system from more packages & download appropriate one.
   
-  for windows direct executable:-
+   **for windows direct executable:-**
+  
+   [https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe]()
     
-    `https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe`    
-     
-  windows zip package:-
+   **windows zip package:-**
     
-    `https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip`
+   [https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip]()
     
- mac zip package:-
+   **mac zip package:-**
  
-   `https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip`
+   [https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip]()
    
 ###5. Conemu Installation:-  
 
@@ -100,6 +101,7 @@ this will install our base box image. once its done check your vagrantfile ,you 
 
   exe package:-
  [http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe]()
+ 
  zip package:-
  [http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z]()       
    
