@@ -24,6 +24,13 @@ For preparing system to run virtual machines, and with setup of useful utilities
 
 * Download and install [Chef Development Kit](https://downloads.getchef.com/chef-dk/)
 
+#### Install Puppet Plugin for Atom
+* Open Atom editor
+* On OS X, select **Atom** -> **Preferences**. On Windows **File** -> **Settings**
+* From **Install**, Search for **language-puppet** and install the extension.  
+* Restart Atom
+
+
 #### Install Chef Plugin for Atom
 * Open Atom editor
 * On OS X, select **Atom** -> **Preferences**. On Windows **File** -> **Settings**
