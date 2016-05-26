@@ -7,7 +7,7 @@ Lab Setup Instructions for Devops Trainings
 
 * [Lab Setup Instructions for Puppet Fundamentals](https://github.com/schoolofdevops/lab-setup/blob/master/puppet/puppet-lab-setup-instructions.md)
 
-* [Lab Setup Instructions for Puppet Fundamentals and Chef Fundamentals Combined](https://github.com/schoolofdevops/lab-setup/blob/master/puppet-chef/puppet-chef-lab-setup-instructions.md)
+* [Lab Setup Instructions for Puppet and  Chef Fundamentals Combined](https://github.com/schoolofdevops/lab-setup/blob/master/puppet-chef/puppet-chef-lab-setup-instructions.md)
 
 
 
