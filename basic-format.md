@@ -17,6 +17,8 @@
 1. Download virtualbox:- Download virtualbox binaries from official virtualbox site for windows machine depending on 32bit/64bit configuration.
 
    [Virtualbox Download](https://www.virtualbox.org/wiki/Downloads)
+   
+   ![](https://github.com/ashwini9860/lab-setup/blob/master/virtualbox.PNG)
 
 
 2. Once virtualbox executable is downloaded double click on.This will display installation welcome dialog box this will allow you to choose where to install virtualbox & additional virtualbox applications.
@@ -33,7 +35,8 @@ Choose default configuration & follow the instructions this will install virtual
 1. Installing vagrant is simple visit official vagarnt download page, depending on your host machine choose package & download it.
 
     [Vagrant Download](https://www.vagrantup.com/downloads.html)
-
+    ![](https://github.com/ashwini9860/lab-setup/blob/master/vagrant.PNG)
+    
 2. It automatically add vagrant to your system path, if not then logged out once & logged in it will be their.
    
 ###3. Git Installation:-
@@ -47,6 +50,8 @@ Choose default configuration & follow the instructions this will install virtual
 2. Other way is to download github which provide both GUI & command line interface. It aslo work well with powershell. you can download github from here -
   
    [Github Deskstop For windows](http://windows.github.com) 
+
+   ![](https://github.com/ashwini9860/lab-setup/blob/master/git-deskstop.PNG)
    
 ###4. Atom Editor:-
 
@@ -54,19 +59,15 @@ Choose default configuration & follow the instructions this will install virtual
   
    [Atom editor download](https://atom.io/)
   
-   select your package depends on your system from more packages & download appropriate one.
-  
-   **for windows direct executable:-**
-  
-   [Windows exe](https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe)
+   ![](https://github.com/ashwini9860/lab-setup/blob/master/atom.PNG)
+
+  select your package depends on your system from more packages & download appropriate one.
+
+     [Windows exe](https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe)
+
+     [Windows zip package](https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip)
     
-   **windows zip package:-**
-    
-   [Windows zip package ](https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip)
-    
-   **mac zip package:-**
- 
-   [mac zip package](https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip)
+     [mac zip package](https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip)
    
 ###5. Conemu Installation:-  
 
@@ -79,6 +80,8 @@ Choose default configuration & follow the instructions this will install virtual
  
  zip package:-
  [ConEmu Download zip](http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z)       
+ 
+ ![](https://github.com/ashwini9860/lab-setup/blob/master/Conemu.PNG)
    
    
              
