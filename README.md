@@ -1,5 +1,5 @@
-# lab-setup
-Lab Setup Instructions for Devops Trainings
+# Lab Setup Instructions
+Lab Setup Instructions for Devops Trainings conducted by School of Devops. 
 
 
 

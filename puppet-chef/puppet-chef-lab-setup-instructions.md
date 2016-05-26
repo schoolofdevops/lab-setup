@@ -1,4 +1,4 @@
-# Lab Setup Instructions - Chef
+# Lab Setup Instructions - Puppet, Chef Combined Training
 ====================
 
 ### Target Audience
