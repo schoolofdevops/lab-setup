@@ -51,7 +51,7 @@ In order to run 64bit VMs, systems need to be enabled with hardware virtualizati
 
 These instructions different from system to system, bases on the BIOS provided with your laptop/desktop. For a lot of systems, Virtualization options are found in **Security** tab.
 
-### Installing Required Softwares
+#### Installing Required Softwares
 
 
 * Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). At the
@@ -65,7 +65,7 @@ writing, the latest version of Vagrant is 1.8.1
 * Open Atom editor
 * On OS X, select **Atom** -> **Preferences**. On Windows **File** -> **Settings**
 * From **Install**, Search for **language-chef** and install the extension.  
-* Restart Atom 
+* Restart Atom
 
 #### Windows specific installation notes
 
