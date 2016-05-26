@@ -16,7 +16,7 @@
 
 1. Download virtualbox:- Download virtualbox binaries from official virtualbox site for windows machine depending on 32bit/64bit configuration.
 
-   [https://www.virtualbox.org/wiki/Downloads]()
+   [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads)
 
 
 2. Once virtualbox executable is downloaded double click on.This will display installation welcome dialog box this will allow you to choose where to install virtualbox & additional virtualbox applications.
@@ -32,7 +32,7 @@ Choose default configuration & follow the instructions this will install virtual
 
 1. Installing vagrant is simple visit official vagarnt download page, depending on your host machine choose package & download it.
 
-    [https://www.vagrantup.com/downloads.html]()
+    [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
 
 2. It automatically add vagrant to your system path, if not then logged out once & logged in it will be their.
 3. once all done create a directory called vagrant using command line then inside that enter command
@@ -65,33 +65,33 @@ This will create a file in your current directory with name vagrantfile.
 
 1. To install git on window visit page
 
-   [https://git-scm.com/download/win]()
+   [https://git-scm.com/download/win](https://git-scm.com/download/win)
    
    this will directly start download git for windows.
    
 2. Other way is to download github which provide both GUI & command line interface. It aslo work well with powershell. you can download github from here -
   
-   [http://windows.github.com.]() 
+   [http://windows.github.com](http://windows.github.com) 
    
 ###4. Atom Editor:-
 
 1. To download Atom editor visit 
   
-   [https://atom.io/]()
+   [https://atom.io/](https://atom.io/)
   
    select your package depends on your system from more packages & download appropriate one.
   
    **for windows direct executable:-**
   
-   [https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe]()
+   [https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe](https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe)
     
    **windows zip package:-**
     
-   [https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip]()
+   [https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip](https://github.com/atom/atom/releases/download/v1.7.4/atom-windows.zip)
     
    **mac zip package:-**
  
-   [https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip]()
+   [https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip](https://github.com/atom/atom/releases/download/v1.7.4/atom-mac.zip)
    
 ###5. Conemu Installation:-  
 
@@ -100,10 +100,10 @@ This will create a file in your current directory with name vagrantfile.
 3. reuirement windows 2000 or later
 
   exe package:-
- [http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe]()
+ [http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe](http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe)
  
  zip package:-
- [http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z]()       
+ [http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z](http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z)       
    
    
              
