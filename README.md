@@ -1,7 +1,13 @@
 # Lab Setup Instructions
-Lab Setup Instructions for Devops Trainings conducted by School of Devops. 
+Lab Setup Instructions for Devops Trainings conducted by School of Devops.
 
+## Common Resources
 
+* [Hardware and Software Pre Requisites](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements.md)
+
+* [Common Lab Setup Instructions](https://github.com/schoolofdevops/lab-setup/blob/master/common/common-lab-setup-instructions.md)
+
+## Tool/Training  Specific Instructions
 
 * [Lab Setup Instructions for Chef Fundamentals](https://github.com/schoolofdevops/lab-setup/blob/master/chef/chef-lab-setup-instructions.md)
 
