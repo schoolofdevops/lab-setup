@@ -1,6 +1,6 @@
 #Lab Setup Instructions
 
-###Requires:-
+###Requirements:-
 **1.Virtualbox**
 
 **2. Vagrant**
@@ -84,4 +84,13 @@ Choose default configuration & follow the instructions this will install virtual
  ![](https://github.com/ashwini9860/lab-setup/blob/master/Conemu.PNG)
    
    
-             
+###Additional Softwares:
+
+**Chef**
+
+[Download chef development kit](https://downloads.chef.io/chef-dk/)
+
+You can download chef development kit depending on your OS:-
+
+![](https://github.com/ashwini9860/lab-setup/blob/master/chef.PNG)
+   
