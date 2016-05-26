@@ -25,10 +25,10 @@ These instructions different from system to system, bases on the BIOS provided w
 | Software  | Version Tested     |
 | :------------- | :------------- |
 | Virtualbox       | 5.0.10      |
-| Vagrant | x |
+| Vagrant | 1.8.1 |
 | Atom | x  | 
 | Chef Development Kit (ChefDK) | x |
-| Git for Windows ( on windows only) | x |
+| Git for Windows ( on windows only) | 1.9.0 |
 | ConEmu ( on windows only) | x |
 
 * Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). At the
