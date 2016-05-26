@@ -1,13 +1,9 @@
 # Lab Setup Instructions - Chef
 ====================
 
-__________________________________________________________________________
 ### Target Audience
 
-	This introductory course is targeted for the budding devops professionals, experienced
-	sysadmins and enthusiasts alike who are already using puppet, or intend to use it to
-	automate configuration management, system integration and manage scalable
-	infrastructures with ease.
+This introductory course is targeted for the budding devops professionals, experienced sysadmins and enthusiasts alike who are already using puppet, or intend to use it to automate configuration management, system integration and manage scalable infrastructures with ease.
 
 ### Prerequisites:
 * Basic understanding of linux/unix system concepts
@@ -32,7 +28,7 @@ __________________________________________________________________________
 | Software  | Version Tested     |
 | :------------- | :------------- |
 | Virtualbox       | 5.0.10      |
-| Vagrant | x | 
+| Vagrant | x |
 | Atom | x  |
 | Chef Development Kit (ChefDK) | x |
 | Git for Windows ( on windows only) | x |
