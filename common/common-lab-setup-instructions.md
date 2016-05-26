@@ -18,7 +18,7 @@ In order to run 64bit VMs, systems need to be enabled with hardware virtualizati
 
 These instructions different from system to system, bases on the BIOS provided with your laptop/desktop. For a lot of systems, Virtualization options are found in **Security** tab.
 
-#### Installing Required Softwares
+#### Installing Required Softwares - Common
 
 
 * Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). At the
@@ -27,7 +27,9 @@ time of writing this document, the latest tested version of VirtualBox is 5.0.10
 writing, the latest version of Vagrant is 1.8.1
 * Install [Atom](https://atom.io) editor from
 
-#### Windows specific installation notes
+#### Installing Required Softwares - Windows Specific
+
+In addition to the common softwares above, windows systems also need the following softwares. 
 
 * Download and install  [GIT for windows](https://msysgit.googlecode.com/files/Git-1.9.0-preview20140217.exe)
 * ConEmu is a terminal emulator for windows, supports multiple tabs, and can work with git bash to open bash terminals. Download and install it from [here]( http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe)
