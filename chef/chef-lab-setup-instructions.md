@@ -1,89 +1,64 @@
-Lab Setup Instructions
+# Lab Setup Instructions - Chef
 ====================
 
 __________________________________________________________________________
-Target Audience
+### Target Audience
 	This introductory course is targeted for the budding devops professionals, experienced
 	sysadmins and enthusiasts alike who are already using puppet, or intend to use it to
 	automate configuration management, system integration and manage scalable
 	infrastructures with ease.
 
-Prerequisites:
+### Prerequisites:
 * Basic understanding of linux/unix system concepts
 * Familiarity with Command Line Interface (CLI)
 * Familiarity with a Text Editor
 
-System Requirements
 
-Hardware Software
+#### System Prerequisites
+
 * Laptop/Desktop with internet connection
-* 8GB RAM
-* Quad Core CPU
-* 50 GB Disk Space available
-* Base OperatingSystem: Windows/Linux/OSX
-* VirtualBox
-* Vagrant
+* Memory : 8GB RAM
+* CPU    :  Quad Core CPU
+* Disk Space : 20 GB Disk Space available
+* Base OperatingSystem: Windows / OSX
 
 
-Softwares Required:
+####  Softwares Prerequisites:
 * Virtualbox
 * Vagrant
-* Sublime
+* Atom Editor
 * Chef Development Kit (ChefDK)
-* Vagrant http proxy
-* Git for Windows ( on windows systems)
+* Git for Windows ( on windows systems only)
+* ConEmu ( on windows systems only)
 
 
-Systems Preparation:
+### Systems Preparation:
 
-We are going to use Vagrant to build our learning environment(s), install puppet, run
-our code on. Vagrant is a tool which allows us to build, configurable, lightweight and portable virtual machines dynamically. To prepare for the Puppet Fundamentals training, we will install Vagrant. It is essential that Virtualbox be installed before setting up
-vagrant as that is the virtualization platform vagrant is built up on.
+To setup the lab, as participants, we would create Virtual Machines with VirtualBox and setup the learning environment. Vagrant is a tool which allows us to build, configure and setup portable virtual machines automatically, and it works with multitude of hypervisors, Virtualbox included. We would also need a sophisticated  editor with chef plugin, which would help us write code fast, with auto completion and syntax highlighting features etc. Thats where Atom comes in handy.  
 
-Installation Instructions:
-* 1. Enable Virtualization Technology(VT -x) from BIOS
-(https://access.redhat.com/documentation/en-
-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/sec
-t-Virtualization-Troubleshooting-
-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.ht
-ml)
-* 2. Install Oracle VirtualBox (https://www.virtualbox.org/wiki/Downloads). At the
-time of writing this document, the latest version of VirtualBox is 4.3.18
-* 3. Install Vagrant (http://www.vagrantup.com/downloads). At the time of
-writing, the latest version of Vagrant is 1.6.5
-* 4. Install proxyconf plugin for vagrant. Detailed instructions are at
-http://tmatilai.github.io/vagrant-proxyconf/
-    $ vagrant plugin install vagrant-proxyconf
-* 5. Install Sublime editor from http://www.sublimetext.com/
-* 6. Install chef plugin for sublime
-http://www.bonusbits.com/main/HowTo:Install_Chef_Support_in_Sublime_Text
-* 7. Download and install Chef Development Kit from
-https://downloads.getchef.com/chef-dk/
-* 8. Download the VM template for chef server from the following location.
-http://initcron-vagrant-boxes.s3.amazonaws.com/initcron-centos-chefbase.
-box
-* 9. Download the VM template for chef server from the following location.
-http://initcron-vagrant-boxes.s3.amazonaws.com/initcron-centos-chefserver.
-box
-* 10.Add the box downloaded above to vagrant. This is similar to adding a VM
-image/template. You need to run the following command from a “CMD”
-console. Open cmd, and cd to the directory where you have downloaded the
-box. Then run the following command (excluding $)
-    $ vagrant box add chef-server initcron-centos-chef-server.box
-    $ vagrant box add chef-base initcron-centos-chef-base.box
-* 11.Now, if you run the following command,you will be able to see the vagrant box
-available
-    $ vagrant box list
+On windows systems, utilities such as ssh do not come installed by default. To install a bash shell and create a remote terminal, Git and ConEmu are effective tools.
 
 
+### Enabling Virtualization from BIOS
 
-Windows specific installation notes
-* • Install GIT for Windows :
-* • Download GIT for windows from below url, launch installer.
-https://msysgit.googlecode.com/files/Git-1.9.0-
-preview20140217.exe
-* • While installing GIT for Windows, it will show “Adjust your PATH
-environment” option. Choose the third option which says “Run
-Git and included Unix tools from the Windows Command
-Prompt”.You could choose default options for all other steps.
+In order to run 64bit VMs, systems need to be enabled with hardware virtualization extensions. On a Mac OSX, this is typically enabled by default. However, on many Windows Laptops/Desktops, VT-x needs to be manually enabled.
 
+[Enable Hardware Virtualization Technology(VT -x) from BIOS](https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html)
+
+These instructions different from system to system, bases on the BIOS provided with your laptop/desktop. For a lot of systems, Virtualization options are found in **Security** tab.
+
+### Installing Required Softwares
+
+
+* Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). At the
+time of writing this document, the latest tested version of VirtualBox is 5.0.10
+* Install [Vagrant](http://www.vagrantup.com/downloads). At the time of
+writing, the latest version of Vagrant is 1.8.1
+* Install [Atom](https://atom.io) editor from
+* Download and install [Chef Development Kit](https://downloads.getchef.com/chef-dk/)
+
+
+#### Windows specific installation notes
+
+* Download and install  [GIT for windows](https://msysgit.googlecode.com/files/Git-1.9.0-preview20140217.exe)
+* ConEmu is a terminal emulator for windows, supports multiple tabs, and can work with git bash to open bash terminals. Download and install it from [here]( http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe)
