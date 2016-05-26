@@ -21,6 +21,16 @@ These instructions different from system to system, bases on the BIOS provided w
 #### Installing Required Softwares - Common
 
 
+
+| Software  | Version Tested     |
+| :------------- | :------------- |
+| Virtualbox       | 5.0.10      |
+| Vagrant | x |
+| Atom | x  | 
+| Chef Development Kit (ChefDK) | x |
+| Git for Windows ( on windows only) | x |
+| ConEmu ( on windows only) | x |
+
 * Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). At the
 time of writing this document, the latest tested version of VirtualBox is 5.0.10
 * Install [Vagrant](http://www.vagrantup.com/downloads). At the time of
@@ -29,7 +39,7 @@ writing, the latest version of Vagrant is 1.8.1
 
 #### Installing Required Softwares - Windows Specific
 
-In addition to the common softwares above, windows systems also need the following softwares. 
+In addition to the common softwares above, windows systems also need the following softwares.
 
 * Download and install  [GIT for windows](https://msysgit.googlecode.com/files/Git-1.9.0-preview20140217.exe)
 * ConEmu is a terminal emulator for windows, supports multiple tabs, and can work with git bash to open bash terminals. Download and install it from [here]( http://www.fosshub.com/ConEmu.html/ConEmuSetup.150813g.exe)
