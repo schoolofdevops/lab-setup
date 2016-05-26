@@ -1,4 +1,6 @@
 
+include chocolatey
+
 class lab {
 	package {'git':
        ensure => installed,
