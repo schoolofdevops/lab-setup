@@ -23,7 +23,7 @@ This introductory course is targeted for the budding devops professionals, exper
 | Disk Space | 20 GB Disk Space available |
 | OS |  Windows / OSX |
 
-####  Softwares Prerequisites:
+####  Softwares Prerequisites
 
 | Software  | Version Tested     |
 | :------------- | :------------- |
@@ -36,14 +36,14 @@ This introductory course is targeted for the budding devops professionals, exper
 
 
 
-### Systems Preparation:
+### Systems Preparation
 
 To setup the lab, as participants, we would create Virtual Machines with VirtualBox and setup the learning environment. Vagrant is a tool which allows us to build, configure and setup portable virtual machines automatically, and it works with multitude of hypervisors, Virtualbox included. We would also need a sophisticated  editor with chef plugin, which would help us write code fast, with auto completion and syntax highlighting features etc. Thats where Atom comes in handy.  
 
 On windows systems, utilities such as ssh do not come installed by default. To install a bash shell and create a remote terminal, Git and ConEmu are effective tools.
 
 
-### Enabling Virtualization from BIOS
+#### Enabling Virtualization from BIOS
 
 In order to run 64bit VMs, systems need to be enabled with hardware virtualization extensions. On a Mac OSX, this is typically enabled by default. However, on many Windows Laptops/Desktops, VT-x needs to be manually enabled.
 
@@ -61,6 +61,11 @@ writing, the latest version of Vagrant is 1.8.1
 * Install [Atom](https://atom.io) editor from
 * Download and install [Chef Development Kit](https://downloads.getchef.com/chef-dk/)
 
+#### Install Chef Plugin for Atom
+* Open Atom editor
+* On OS X, select **Atom** -> **Preferences**. On Windows **File** -> **Settings**
+* From **Install**, Search for **language-chef** and install the extension.  
+* Restart Atom 
 
 #### Windows specific installation notes
 
