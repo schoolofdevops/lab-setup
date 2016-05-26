@@ -3,6 +3,7 @@
 
 __________________________________________________________________________
 ### Target Audience
+
 	This introductory course is targeted for the budding devops professionals, experienced
 	sysadmins and enthusiasts alike who are already using puppet, or intend to use it to
 	automate configuration management, system integration and manage scalable
@@ -16,20 +17,27 @@ __________________________________________________________________________
 
 #### System Prerequisites
 
-* Laptop/Desktop with internet connection
-* Memory : 8GB RAM
-* CPU    :  Quad Core CPU
-* Disk Space : 20 GB Disk Space available
-* Base OperatingSystem: Windows / OSX
 
+
+| COMPONENT    | MINIMUM REQUIREMENT     |
+| :------------- | :------------- |
+| System      | Laptop/Desktop with internet connection       |
+| Memory |  8GB RAM |
+|  CPU    |  Quad Core CPU |
+| Disk Space | 20 GB Disk Space available |
+| OS |  Windows / OSX |
 
 ####  Softwares Prerequisites:
-* Virtualbox
-* Vagrant
-* Atom Editor
-* Chef Development Kit (ChefDK)
-* Git for Windows ( on windows systems only)
-* ConEmu ( on windows systems only)
+
+| Software  | Version Tested     |
+| :------------- | :------------- |
+| Virtualbox       | 5.0.10      |
+| Vagrant | x | 
+| Atom | x  |
+| Chef Development Kit (ChefDK) | x |
+| Git for Windows ( on windows only) | x |
+| ConEmu ( on windows only) | x |
+
 
 
 ### Systems Preparation:
