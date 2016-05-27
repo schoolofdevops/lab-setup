@@ -31,11 +31,11 @@ Its a windows resource for chef to modify default path to store installed packag
 
  2. enter command
  
-      > berks install 
+          berks install 
 
-      > berks upload
+          berks upload
 
  3. converge cookbook
-
-      knife ssh "*:*" -x User_name -P password "sudo chef-client"
+          
+          knife ssh "*:*" -x User_name -P password "sudo chef-client"
 
