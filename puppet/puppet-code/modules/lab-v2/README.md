@@ -1,6 +1,6 @@
 ###Lab-setup softwaare install using puppet 
 
-Here all the **exe** &  **msi** file present on puppetmaster , then transfer inti windows location & installation done.
+Here all the **exe** &  **msi** file present on puppetmaster , then it transfer to  windows location & installation done.
 
 **Directory stucture:-**
 
