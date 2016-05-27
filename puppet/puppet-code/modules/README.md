@@ -1,7 +1,36 @@
 # lab-setup
-puppet automation code for windows package installation using chocolatey
+###Puppet automation code for windows package installation using chocolatey
 
-It requires chocolatey should be prior install on remote host using chocolatey forge module/mannulay/or else
-####Error
-1. in my case i face problem to install packages on windows even if i installed chocolatey it said class not found as i include chocolatey modules.
-2. or when i skip include module chocolatey then it works but no package installed on machine i just run script without giving error.
+**Requirement:-**
+
+Chocolatey should be prior install on remote host.
+
+
+**Directory structure:-**
+
+ 
+ +-- etc/
+     
+     +-- puppet
+      
+          +-- module
+      
+               +-- lab
+       
+                   +-- manifests
+       
+                       +-- init.pp
+
+
+**To run module
+
+1. Run on windows register agent :-    
+    
+     > puppet agent --test 
+    
+2. Run module locally on windows machine without registering agent:-
+
+   just go to module directory inside lab & run this command
+
+    > puppet apply manifests/init.pp
+
