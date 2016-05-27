@@ -1,9 +1,6 @@
 # allpack
 
-TODO: Enter the cookbook description here.
-
-
-###chef code to install lab_setup supporting packages for windows.
+###Chef code to install lab_setup supporting packages for windows.
 
 **It Installs:-**
 
@@ -20,6 +17,7 @@ TODO: Enter the cookbook description here.
 
 Inside recipes remote_file location is menstioned which tells where to store all packages, modify this path as per your requirements. 
 
+Its a windows resource for chef to modify default path to store installed packages.
 
 
 **To run this cookbook locally:-**
@@ -32,12 +30,12 @@ Inside recipes remote_file location is menstioned which tells where to store all
  1. move inside "allpack dir"
 
  2. enter command
-     
+ 
       > berks install 
 
       > berks upload
 
-3.converge cookbook
+ 3. converge cookbook
 
       knife ssh "*:*" -x User_name -P password "sudo chef-client"
 
