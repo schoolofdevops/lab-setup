@@ -4,24 +4,22 @@ Here all the **exe** &  **msi** file present on puppetmaster , then it transfer 
 
 **Directory stucture:-**
 
-  +--etc/
-      
-      +-- puppet
-        
-           +-- module
-           
-                +-- lab-v2
-                 
-                    +-- files
-                         (contain all packages exe & msi files)
-                  
-                    +-- manifests
-                    
-                        +-- init.pp
-                            (contain code)
-                            
-                        
-                            
+<pre>
+  puppet
+    |
+    |  
+    | - - module
+    |        |     
+    |        |- - lab-v2
+    |        |      |
+    |        |      |- - files
+    |        |      |     (contain all packages exe & msi files)
+    |        |      |- - manifests
+    |        |      |       |
+    |        |      |       |- - init.pp
+    
+    </pre>
+ 
   **Run module locally**
   
      > puppet apply manifests\init.pp
