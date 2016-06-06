@@ -11,4 +11,4 @@
 
 change souce location depends on your system path & requirements inside **init.pp**
 
-** Files directory must  caintains all exe & msi files , which we have to transfer inside remote machine & then installation can be done.**
+**Files directory must  caintains all exe & msi files , which we have to transfer inside remote machine & then installation can be done.**
