@@ -15,7 +15,7 @@
 
 **Imp:-**
 
-Inside recipes remote_file location resource  which tells where to store all packages, modify this path as per your requirements. 
+Inside recipes remote_file location is menstioned which tells where to store all packages, modify this path as per your requirements. 
 
 Its a windows resource for chef to modify default path to store installed packages.
 
@@ -31,11 +31,11 @@ Its a windows resource for chef to modify default path to store installed packag
 
  2. enter command
  
-          berks install 
+      > berks install 
 
-          berks upload
+      > berks upload
 
  3. converge cookbook
-          
-          knife ssh "*:*" -x User_name -P password "sudo chef-client"
+
+      knife ssh "*:*" -x User_name -P password "sudo chef-client"
 

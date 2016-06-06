@@ -29,7 +29,7 @@ For preparing system to run virtual machines, and with setup of useful utilities
 * On OS X, select **Atom** -> **Preferences**. On Windows **File** -> **Settings**
 * From **Install**, Search for **language-puppet** and install the extension.  
 * Restart Atom
-![](/images/lan-puppet.png)
+![](https://github.com/ashwini9860/lab-setup/blob/master/lan-puppet.PNG)
 
 
 #### Install Chef Plugin for Atom
@@ -37,4 +37,4 @@ For preparing system to run virtual machines, and with setup of useful utilities
 * On OS X, select **Atom** -> **Preferences**. On Windows **File** -> **Settings**
 * From **Install**, Search for **language-chef** and install the extension.  
 * Restart Atom
-![](/images/lan-chef.png)
+![](https://github.com/ashwini9860/lab-setup/blob/master/lan-chef.PNG)
