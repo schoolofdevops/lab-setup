@@ -1,5 +1,4 @@
-### Lab setup software installation using puppet 
-**provide => chocolatey**
+### Lab setup software installation using puppet with chocolatey provider
 
 **Requirements:-**
 
