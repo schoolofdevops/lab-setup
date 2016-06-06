@@ -1,4 +1,4 @@
-# Lab Setup Instructions - Chef
+# Lab Setup Instructions - Chef & Puppet
 ====================
 
 ### Target Audience
