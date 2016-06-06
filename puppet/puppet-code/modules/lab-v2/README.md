@@ -1,4 +1,6 @@
- 
+###Install lab-setup software using puppet with pre install exe/msi file on host server
+
+
  **Run module locally**
   
      > puppet apply manifests\init.pp
