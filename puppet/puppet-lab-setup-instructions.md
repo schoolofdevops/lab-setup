@@ -16,4 +16,4 @@ For preparing system to run virtual machines, and with setup of useful utilities
 * From **Install**, Search for **language-puppet** and install the extension.  
 * Restart Atom
 
-![Extenstion for puupet language installation](https://github.com/ashwini9860/lab-setup/blob/master/lan-puppet.PNG)
+![Extenstion for puupet language installation](/images/lan-puppet.png)

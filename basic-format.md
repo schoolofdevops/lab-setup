@@ -18,7 +18,7 @@
 
    [Virtualbox Download](https://www.virtualbox.org/wiki/Downloads)
    
-   ![](https://github.com/ashwini9860/lab-setup/blob/master/virtualbox.PNG)
+   ![](/images/virtualbox.png)
 
 
 2. Once virtualbox executable is downloaded double click on.This will display installation welcome dialog box this will allow you to choose where to install virtualbox & additional virtualbox applications.
@@ -35,7 +35,7 @@ Choose default configuration & follow the instructions this will install virtual
 1. Installing vagrant is simple visit official vagarnt download page, depending on your host machine choose package & download it.
 
     [Vagrant Download](https://www.vagrantup.com/downloads.html)
-    ![](https://github.com/ashwini9860/lab-setup/blob/master/vagrant.PNG)
+    ![](/images/vagrant.png)
     
 2. It automatically add vagrant to your system path, if not then logged out once & logged in it will be their.
    
@@ -51,7 +51,7 @@ Choose default configuration & follow the instructions this will install virtual
   
    [Github Deskstop For windows](http://windows.github.com) 
 
-   ![](https://github.com/ashwini9860/lab-setup/blob/master/git-deskstop.PNG)
+   ![](/images/git-deskstop.png)
    
 ###4. Atom Editor:-
 
@@ -59,7 +59,7 @@ Choose default configuration & follow the instructions this will install virtual
   
    [Atom editor download](https://atom.io/)
   
-   ![](https://github.com/ashwini9860/lab-setup/blob/master/atom.PNG)
+   ![](/images/atom.png)
 
   select your package depends on your system from more packages & download appropriate one.
 
@@ -81,7 +81,7 @@ Choose default configuration & follow the instructions this will install virtual
  zip package:-
  [ConEmu Download zip](http://www.fosshub.com/ConEmu.html/ConEmuPack.150813g.7z)       
  
- ![](https://github.com/ashwini9860/lab-setup/blob/master/Conemu.PNG)
+ ![](/images/Conemu.png)
    
    
 ###Additional Softwares:
@@ -92,5 +92,5 @@ Choose default configuration & follow the instructions this will install virtual
 
 You can download chef development kit depending on your OS:-
 
-![](https://github.com/ashwini9860/lab-setup/blob/master/chef.PNG)
+![](/images/chef.png)
    
