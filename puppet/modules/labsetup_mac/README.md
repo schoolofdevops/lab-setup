@@ -1,5 +1,8 @@
 #Labsetup_mac puppet module
 
+###Prerequisites to run this module:-
+- wget utility on your system
+
 ###Cookbook is used to install packages on mac
 
 - atom editor
