@@ -1,0 +1,126 @@
+{
+  "variables":
+    {
+      "iso_url": "",
+      "iso_checksum": "",
+      "iso_checksum_type": ""
+    },
+
+  "builders": [
+    {   
+      "type": "virtualbox-iso",
+      "vm_name": "centos-iptl-1",
+      "boot_wait": "10s",
+      "disk_size": 40520,
+      "guest_os_type": "RedHat_64",
+      "http_directory": "http",
+
+      "iso_url": "{{user `iso_url`}}",
+      "iso_checksum": "{{user `iso_checksum`}}",
+      "iso_checksum_type": "{{user `iso_checksum_type`}}",
+      "guest_additions_path": "VBoxGuestAdditions.iso",
+
+      "boot_command": [
+        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/vagrant.ks<enter><wait>"
+      ],
+      "shutdown_command": "echo 'vagrant'|sudo -S /sbin/halt -h -p",
+      "shutdown_timeout" : "10s",
+      "ssh_username": "vagrant",
+      "ssh_password": "vagrant",
+      "ssh_port": 22,       
+      "hard_drive_interface": "sata",
+      "ssh_wait_timeout": "10000s",
+      "vboxmanage": [
+        [  "modifyvm",  "{{.Name}}",  "--memory",  "1024" ],
+        [  "modifyvm",  "{{.Name}}",  "--cpuexecutioncap",  "100" ]
+      ],
+      "virtualbox_version_file": ".vbox_version"
+    }
+  ], 
+  
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "override": {
+        "virtualbox": {
+          "output": "devops-training-centos-iptl-1.box"
+        }
+      }
+    }
+  ], 
+  
+  "provisioners": [
+
+    {
+      "type": "file",
+      "source": "scripts/public_repo_enable.sh",
+      "destination": "/tmp/public_repo_enable.sh"
+    },
+
+    {
+      "type": "file",
+      "source": "scripts/public_repo_disable.sh",
+      "destination": "/tmp/public_repo_disable.sh"
+    },
+
+    {
+
+      "type": "file",
+      "source": "repo/puppet.tar.gz",
+      "destination": "/tmp/puppet.tar.gz"      
+    },
+
+    {
+
+      "type": "file",
+      "source": "repo/chef.tar.gz",
+      "destination": "/tmp/chef.tar.gz"      
+    },
+    {
+
+      "type": "file",
+      "source": "repo/docker.tar.gz",
+      "destination": "/tmp/docker.tar.gz"      
+    },
+    {
+
+      "type": "file",
+      "source": "repo/java.tar.gz",
+      "destination": "/tmp/java.tar.gz"      
+    },
+
+    {
+
+      "type": "file",
+      "source": "repo/lamp.tar.gz",
+      "destination": "/tmp/lamp.tar.gz"      
+    },
+
+    {
+      "type": "file",
+      "source": "install.tar.gz",
+      "destination": "/tmp/install.tar.gz"
+    },
+
+   {
+      "type": "shell",
+      "execute_command": "echo 'vagrant'|sudo -S bash '{{.Path}}'",
+      "override": {
+        "virtualbox-iso": {
+          "scripts": [
+            "scripts/mkdir.sh",
+            "scripts/base.sh",
+            "scripts/localinstall.sh",
+            "scripts/localrepo.sh",
+            "scripts/vagrant.sh",
+            "scripts/virtualbox.sh",
+            "scripts/motd.sh",
+            "scripts/cleanup.sh"
+          
+
+          ]
+        }
+      }
+    }
+  ]
+}

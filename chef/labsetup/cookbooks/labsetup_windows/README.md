@@ -1,8 +1,6 @@
-###Labsetup_windows cookbook
+#Labsetup_windows cookbook
 
-   
-   # Labsetup_mac
-###cookbook used to install packages for mac os:-
+###cookbook used to install packages for windows:-
 
 - atom editor
 - git

@@ -16,7 +16,7 @@
 
 | Software  | Version Tested     | License     |
 | :------------- | :------------- | :------------- |
-| Virtualbox       | 5.0.10      | Open Source/Free |
+| Virtualbox       | 5.0.20      | Open Source/Free |
 | Vagrant | 1.8.1 | Open Source/Free |
 | Atom | 1.7.4  | Open Source/Free |
 | Chef Development Kit (ChefDK) | 0.14.25 | Open Source/Free |
