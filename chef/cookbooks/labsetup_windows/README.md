@@ -2,7 +2,7 @@
 
    
    # Labsetup_mac
-cookbook used to install packages for mac os:-
+###cookbook used to install packages for mac os:-
 
 - atom editor
 - git
@@ -11,7 +11,7 @@ cookbook used to install packages for mac os:-
 
 ###Default attributes 
 
-modify path as per your requirement
+- modify installation package path as per your requirement
 
 		default['labsetup']['path '] = "C://'"
 		
