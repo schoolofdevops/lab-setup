@@ -1,11 +1,11 @@
 # Labsetup_mac
 
-prerequisite to run cookbook:-
+###Prerequisites to run cookbook:-
 - Install brew on your local machine without sudo/root previlleges using this command:-
    
 		 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-cookbook used to install packages for mac os:-
+###cookbook used to install packages for mac os:-
 
 - wget
 - atom editor
