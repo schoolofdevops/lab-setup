@@ -4,7 +4,6 @@
 - All packages that to be installed require on your local machine (exe/msi files) 
 - Here it stored in directory
 <pre>
-
     |
     |--puppet
     |       |
@@ -13,7 +12,6 @@
     |       |         |--labsetup_windows
     |       |         |                 |
     |       |         |                 |--files
-              
 </pre>
 
 ###Puupet module is used to install packages:-
