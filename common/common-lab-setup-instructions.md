@@ -22,14 +22,14 @@ These instructions different from system to system, bases on the BIOS provided w
 
 
 
-| Software  | Version Tested     |
-| :------------- | :------------- |
-| Virtualbox       | 5.0.10      |
-| Vagrant | 1.8.1 |
-| Atom | x  | 
-| Chef Development Kit (ChefDK) | x |
-| Git for Windows ( on windows only) | 1.9.0 |
-| ConEmu ( on windows only) | x |
+| Software  | Version Tested     | Windows Installer | OS X Installer |
+| :------------- | :------------- | :--------------- | :---------------| 
+| Virtualbox     | v5.0.20 |[5.0.20](http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-Win.exe)      | [5.0.20](http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg)  
+| Vagrant | v1.8.1 | [1.8.1](https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.msi) | [1.8.1](https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg) |
+| Atom | v1.7.4 |[1.7.4](https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe) |  [1.7.4](https://atom.io/download/mac) | 
+| Chef Development Kit (ChefDK) | v0.14.25 | [0.14.25](https://packages.chef.io/stable/windows/2008r2/chefdk-0.14.25-1-x86.msi) | [0.14.25](https://packages.chef.io/stable/mac_os_x/10.11/chefdk-0.14.25-1.dmg) |
+| Git for Windows | v2.8.3| [2.8.3](https://github.com/git-for-windows/git/releases/download/v2.8.3.windows.1/Git-2.8.3-64-bit.exe) |
+| ConEmu | v150813g | [150813g](http://www.fosshub.com/ConEmu.html/ConEmu_150813g_English.paf.exe) |
 
 * Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads). At the
 time of writing this document, the latest tested version of VirtualBox is 5.0.10
