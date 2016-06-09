@@ -15,7 +15,7 @@ do
 done
 
 # add puppet path to bashrc
-sudo echo "export PATH=$PATH:/opt/puppetlabs/bin" >> ~/.bashrc
+sudo echo "export PATH=$PATH:/opt/puppetlabs/bin/" >> ~/.bashrc
 
 # executable permission to enable/disable scripts
 sudo chmod +x /tmp/public_repo_enable.sh
