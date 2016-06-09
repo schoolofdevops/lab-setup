@@ -1,7 +1,12 @@
 # Labsetup_mac
+
+prerequisite to run cookbook:-
+- Install brew on your local machine without sudo/root previlleges using this command:-
+   
+		 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 cookbook used to install packages for mac os:-
 
-- brew
 - wget
 - atom editor
 - git
@@ -10,7 +15,7 @@ cookbook used to install packages for mac os:-
 
 ###Run cookbook locally:-
 
-		chef-client --local-mode -r 'recipe[labsetup_mac]'
+	     	sudo chef-client --local-mode -r 'recipe[labsetup_mac]'
 
 
 ###On remote client/node:-
