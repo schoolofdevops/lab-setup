@@ -1,0 +1,50 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.box = "puppet-template"
+
+  config.vm.define :master do |master|
+    master.vm.hostname = "master"
+    master.vm.network :private_network, ip: "192.168.5.10"
+    master.vm.provision "shell", inline: $script
+    config.vm.provider :virtualbox do |vb|
+        vb.customize ["modifyvm", :id, "--memory", "3000"]
+        vb.customize ["modifyvm", :id, "--cpus", "2"]
+    end
+  end
+
+  config.vm.define :web do |web|
+    web.vm.hostname = "web"
+    web.vm.network :private_network, ip: "192.168.5.11"
+    web.vm.provision "shell", inline: $script
+    config.vm.provider :virtualbox do |vb|
+       vb.customize ["modifyvm", :id, "--memory", "512"]
+       vb.customize ["modifyvm", :id, "--cpus", "1"]
+    end
+  end
+
+  config.vm.define :db do |db|
+    db.vm.hostname = "db"
+    db.vm.network :private_network, ip: "192.168.5.12"
+    db.vm.provision "shell", inline: $script
+    config.vm.provider :virtualbox do |vb|
+       vb.customize ["modifyvm", :id, "--memory", "512"]
+       vb.customize ["modifyvm", :id, "--cpus", "1"]
+    end
+  end
+
+
+$script = <<SCRIPT
+cat >> /etc/hosts  << END
+192.168.5.10 master.example.com master puppet
+192.168.5.11 web.example.com web
+192.168.5.12 db.example.com db
+END
+SCRIPT
+
+end
