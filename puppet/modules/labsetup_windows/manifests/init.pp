@@ -1,6 +1,4 @@
-
 class lab_v2 {
-
   file { 'C:\windows\tmp\Git-2.8.3-32-bit.exe':
     source => 'puppet:///modules/lab_v2/files/Git-2.8.3-32-bit.exe'
     source_permission => ignore,
@@ -56,4 +54,6 @@ class lab_v2 {
     require => File['C:\windows\tmp\ConEmu_150813g_English.paf.exe']
   }
 }
+
+
 
