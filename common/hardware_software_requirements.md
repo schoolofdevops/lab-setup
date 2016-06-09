@@ -17,8 +17,8 @@
 | Software  | Version Tested     | License     |
 | :------------- | :------------- | :------------- |
 | Virtualbox       | 5.0.10      | Open Source/Free |
-| Vagrant | x | Open Source/Free |
-| Atom | x  | Open Source/Free |
-| Chef Development Kit (ChefDK) | x | Open Source/Free |
-| Git for Windows ( on windows only) | x | Open Source/Free |
-| ConEmu ( on windows only) | x | Open Source/Free |
+| Vagrant | 1.8.1 | Open Source/Free |
+| Atom | 1.7.4  | Open Source/Free |
+| Chef Development Kit (ChefDK) | 0.14.25 | Open Source/Free |
+| Git for Windows ( on windows only) | 2.8.3 | Open Source/Free |
+| ConEmu ( on windows only) | 150813g | Open Source/Free |

@@ -2,13 +2,7 @@
 # Cookbook Name:: labsetup_mac
 # Recipe:: default
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
-
-##install brew
-execute 'brew install' do
-  command '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-  not_if { File.exist?("/usr/local/bin/brew") }
-end
+# Copyright (c) 2016 The Authors, All Rights Reserved
 
 ##install wget
 execute 'wget install' do
@@ -21,22 +15,6 @@ include_recipe "pack::git"
 include_recipe "pack::vagrant"
 include_recipe "pack::virtualbox"
 
-
-
-
-
-
-
-
-
-
-
-
-#package 'vagrant' do
-#  provider Chef::Provider::Package::Homebrew
-#  action :install
-#  source '/tmp/vagrant_1.8.1.dmg'
-#end  
 
 
   
