@@ -20,6 +20,9 @@ These instructions different from system to system, bases on the BIOS provided w
 
 #### Installing Required Softwares - Common
 
+- Install software with specific version  by clicking on link provided in below table 
+
+- Additional software need  for windows system are git & ConEmu
 
 
 | Software     | Windows Installer | OS X Installer |
