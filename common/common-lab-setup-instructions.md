@@ -1,5 +1,11 @@
 ## Common  Setup Instructions
-#### Softwares:  Virtualbox, Vagrant, Git, Atom , ConEMU
+#### Softwares
+
+  * Virtualbox
+  * Vagrant
+  * Git
+  * Atom
+  * ConEMU
 ====================
 
 
