@@ -17,7 +17,7 @@ Refer to [Hardware and Software Pre Requisites](../common/hardware_software_requ
 
 
 ### Systems Preparation
-For preparing system to run virtual machines, and with setup of useful utilities refer to [Common Lab Setup Instructions](/lab-setup/common/common-lab-setup-instructions.md).  
+For preparing system to run virtual machines, and with setup of useful utilities refer to [Common Lab Setup Instructions](https://github.com/schoolofdevops/lab-setup/blob/master/common/common-lab-setup-instructions.md).  
 
 
 #### Additional Softwares
