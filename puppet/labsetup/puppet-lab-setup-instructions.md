@@ -3,7 +3,7 @@
 
 #### System Prerequisites : Hardware and Software
 
-Refer to [Hardware and Software Pre Requisites](../common/hardware_software_requirements.md) page.
+Refer to [Hardware and Software Pre Requisites](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements.md) page.
 
 
 ### Systems Preparation
