@@ -13,7 +13,7 @@ This introductory course is targeted for the budding devops professionals, exper
 
 #### System Prerequisites : Hardware and Software
 
-Refer to [Hardware and Software Pre Requisites](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements.md) page.
+Refer to [Hardware and Software Pre Requisites](../common/hardware_software_requirements.md) page.
 
 
 ### Systems Preparation
@@ -30,4 +30,3 @@ For preparing system to run virtual machines, and with setup of useful utilities
 * From **Install**, Search for **language-chef** and install the extension.  
 * Restart Atom
 ![](/images/lan-chef.png)
-
