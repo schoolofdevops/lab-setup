@@ -13,11 +13,11 @@ This introductory course is targeted for the budding devops professionals, exper
 
 #### System Prerequisites : Hardware and Software
 
-Refer to [Hardware and Software Pre Requisites](/lab-setup/common/hardware_software_requirements.md) page.
+Refer to [Hardware and Software Pre Requisites](/lab-setup/common/hardware_softwarw_requirements.md) page.
 
 
 ### Systems Preparation
-For preparing system to run virtual machines, and with setup of useful utilities refer to [Common Lab Setup Instructions](https://github.com/schoolofdevops/lab-setup/blob/master/common/common-lab-setup-instructions.md).  
+For preparing system to run virtual machines, and with setup of useful utilities refer to [Common Lab Setup Instructions](/lab-setup/common/common-lab-setup-instructions.md).  
 
 
 #### Additional Softwares
