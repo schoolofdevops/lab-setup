@@ -47,8 +47,13 @@ package {'git':
   }  
 
 exec { 'atom_download':
+   cwd => '/tmp',
    command => '/usr/local/bin/wget https://github.com/atom/atom/releases/download/v1.8.0/atom-mac.zip',
    creates => '/tmp/atom-mac.zip',
-  }
+
+exec { 'atom unpack': 
+   cwd => '/tmp',
+   command => 'unzip atom-mac.zip'
+   }  
 
 
