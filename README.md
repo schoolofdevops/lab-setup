@@ -5,7 +5,7 @@ Lab Setup Instructions for Devops Trainings conducted by School of Devops.
 
 * [Hardware and Software Pre Requisites](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements.md)
 
-* [hardware and Software Pre Requisites for Devops Workshop](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements_devops.md)
+* [Hardware and Software Pre Requisites for Devops Workshop](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements_devops.md)
 
 
 * [Common Lab Setup Instructions](https://github.com/schoolofdevops/lab-setup/blob/master/common/common-lab-setup-instructions.md)
