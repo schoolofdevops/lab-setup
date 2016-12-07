@@ -5,6 +5,9 @@ Lab Setup Instructions for Devops Trainings conducted by School of Devops.
 
 * [Hardware and Software Pre Requisites](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements.md)
 
+* [hardware and Software Pre Requisites for Devops Workshop](https://github.com/schoolofdevops/lab-setup/blob/master/common/hardware_software_requirements_devops.md)
+
+
 * [Common Lab Setup Instructions](https://github.com/schoolofdevops/lab-setup/blob/master/common/common-lab-setup-instructions.md)
 
 ## Tool/Training  Specific Instructions
@@ -15,6 +18,7 @@ Lab Setup Instructions for Devops Trainings conducted by School of Devops.
 
 * [Lab Setup Instructions for Puppet and  Chef Fundamentals Combined](https://github.com/schoolofdevops/lab-setup/blob/master/puppet-chef/puppet-chef-lab-setup-instructions.md)
 
+* [Lab Setup Instructions for Devops Workshop](https://github.com/schoolofdevops/lab-setup/blob/master/devops/labsetup/devops-workshop-lab-setup-instructions.md)
 
 
 
