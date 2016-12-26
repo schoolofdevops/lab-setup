@@ -20,6 +20,7 @@ Lab Setup Instructions for Devops Trainings conducted by School of Devops.
 
 * [Lab Setup Instructions for Devops Workshop](https://github.com/schoolofdevops/lab-setup/blob/master/devops/labsetup/devops-workshop-lab-setup-instructions.md)
 
+* [Lab Setup Instructions for Docker](https://github.com/schoolofdevops/lab-setup/blob/master/docker/labsetup/docker-lab-setup-instructions.md)
 
 
 
