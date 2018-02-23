@@ -1,0 +1,35 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "ubuntu"
+
+  dataDisk1 = './dataDisk1.vdi'
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+
+    # Building disk files if they don't exist
+    if not File.exists?(dataDisk1)
+      vb.customize ['createhd', '--filename', dataDisk1, '--variant', 'Fixed', '--size', 10 * 1024]
+    end
+
+      # Adding a SATA controller that allows 4 hard drives
+      vb.customize ['storagectl', :id, '--name', 'SATA Controller', '--add', 'sata', '--portcount', 1]
+      # Attaching the disks using the SATA controller
+      vb.customize ['storageattach', :id,  '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', dataDisk1]
+  end
+
+  config.vm.provision "shell", path: "setup_nfs.sh"
+
+  config.vm.define "minikube" do |kube|
+    kube.vm.hostname = "minikube"
+    kube.vm.network "private_network", ip: "10.128.0.50"
+    config.vm.provider :virtualbox do |vb|
+       vb.customize ["modifyvm", :id, "--memory", "2048"]
+       vb.customize ["modifyvm", :id, "--cpus", "2"]
+       vb.gui = false
+    end
+  end
+end
