@@ -1,5 +1,4 @@
 #!/bin/bash
-    sudo mkfs.ext4 /dev/sdb
     sudo apt-get update
     sudo apt-get install nfs-kernel-server -y
     sudo mkdir -p /var/nfs/kubernetes
