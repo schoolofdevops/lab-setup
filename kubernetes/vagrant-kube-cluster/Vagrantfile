@@ -47,7 +47,7 @@ sudo rm -rf /var/lib/kubelet/*
 echo I am joining NFS...
 sudo apt-get install nfs-common -y
 sudo mkdir -p /nfs/kubernetes
-sudo mount 192.168.12.50:/var/nfs/kubernetes /nfs/kubernetes
+sudo mount 192.168.12.10:/var/nfs/kubernetes /nfs/kubernetes
 SCRIPT
 
 end
