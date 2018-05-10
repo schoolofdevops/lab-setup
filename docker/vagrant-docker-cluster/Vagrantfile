@@ -1,0 +1,66 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+  config.vm.box = "ubuntu/xenial64"
+
+  config.vm.define "docker-01" do |docker|
+    docker.vm.hostname = "docker-01"
+    docker.vm.network "private_network", ip: "192.168.22.10"
+    config.vm.provider :virtualbox do |vb|
+       vb.customize ["modifyvm", :id, "--memory", "2048"]
+       vb.customize ["modifyvm", :id, "--cpus", "2"]
+    end
+    docker.vm.provision "shell", inline: $script
+  end
+
+ config.vm.define "docker-02" do |docker|
+    docker.vm.hostname = "docker-02"
+    docker.vm.network "private_network", ip: "192.168.22.11"
+    config.vm.provider :virtualbox do |vb|
+       vb.customize ["modifyvm", :id, "--memory", "2048"]
+       vb.customize ["modifyvm", :id, "--cpus", "1"]
+    end
+    docker.vm.provision "shell", inline: $script
+  end
+
+ config.vm.define "docker-03" do |docker|
+    docker.vm.hostname = "docker-03"
+    docker.vm.network "private_network", ip: "192.168.22.12"
+    config.vm.provider :virtualbox do |vb|
+       vb.customize ["modifyvm", :id, "--memory", "2048"]
+       vb.customize ["modifyvm", :id, "--cpus", "1"]
+    end
+    docker.vm.provision "shell", inline: $script
+  end
+
+$script = <<SCRIPT
+echo I am provisioning...
+sudo cp /vagrant/hosts /etc/hosts
+sudo apt-get update
+sudo apt-get install -y git wget
+
+# Install Docker
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+sudo apt-get update
+
+sudo apt-get install -yq docker-ce
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.19.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+SCRIPT
+
+end

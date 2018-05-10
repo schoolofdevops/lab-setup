@@ -22,6 +22,8 @@ Lab Setup Instructions for Devops Trainings conducted by School of Devops.
 
 * [Lab Setup Instructions for Docker](https://github.com/schoolofdevops/lab-setup/blob/master/docker/labsetup/docker-lab-setup-instructions.md)
 
+* [Lab Setup Instructions for Docker Advanced](https://github.com/schoolofdevops/lab-setup/blob/master/docker/labsetup/docker-cluster)
+
 * [Lab Setup Instructions for Docker - Offline Version ](https://github.com/schoolofdevops/lab-setup/blob/master/docker/labsetup/docker_vm_env.md)
 
 ### License (CC-BY-NC-ND)
