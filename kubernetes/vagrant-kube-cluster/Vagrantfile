@@ -9,8 +9,8 @@ Vagrant.configure(2) do |config|
     kube.vm.hostname = "kube-01"
     kube.vm.network "private_network", ip: "192.168.56.101"
     config.vm.provider :virtualbox do |vb|
-       vb.customize ["modifyvm", :id, "--memory", "2048"]
-       vb.customize ["modifyvm", :id, "--cpus", "2"]
+       vb.customize ["modifyvm", :id, "--memory", 2048]
+       vb.customize ["modifyvm", :id, "--cpus", 2]
     end  
     kube.vm.provision "shell", inline: $script
   end
@@ -19,8 +19,8 @@ Vagrant.configure(2) do |config|
     kube.vm.hostname = "kube-02"
     kube.vm.network "private_network", ip: "192.168.56.102"
     config.vm.provider :virtualbox do |vb|
-       vb.customize ["modifyvm", :id, "--memory", "2048"]
-       vb.customize ["modifyvm", :id, "--cpus", "1"]
+       vb.customize ["modifyvm", :id, "--memory", 2048]
+       vb.customize ["modifyvm", :id, "--cpus", 1]
     end
     kube.vm.provision "shell", inline: $script
   end
@@ -29,8 +29,8 @@ Vagrant.configure(2) do |config|
     kube.vm.hostname = "kube-03"
     kube.vm.network "private_network", ip: "192.168.56.103"
     config.vm.provider :virtualbox do |vb|
-       vb.customize ["modifyvm", :id, "--memory", "2048"]
-       vb.customize ["modifyvm", :id, "--cpus", "1"]
+       vb.customize ["modifyvm", :id, "--memory", 2048]
+       vb.customize ["modifyvm", :id, "--cpus", 1]
     end
     kube.vm.provision "shell", inline: $script
   end
