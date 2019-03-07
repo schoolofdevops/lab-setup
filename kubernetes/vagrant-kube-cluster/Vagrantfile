@@ -13,6 +13,8 @@ Vagrant.configure(2) do |config|
        vb.customize ["modifyvm", :id, "--cpus", 2]
     end  
     kube.vm.provision "shell", inline: $script
+    kube.vm.provision "shell", inline: $script_master_root
+    kube.vm.provision "shell", inline: $script_master_vagrant, privileged: false
   end
  
  config.vm.define "kube-02" do |kube|
@@ -23,6 +25,7 @@ Vagrant.configure(2) do |config|
        vb.customize ["modifyvm", :id, "--cpus", 1]
     end
     kube.vm.provision "shell", inline: $script
+    kube.vm.provision "shell", inline: $script_worker_root
   end
 
  config.vm.define "kube-03" do |kube|
@@ -33,6 +36,7 @@ Vagrant.configure(2) do |config|
        vb.customize ["modifyvm", :id, "--cpus", 1]
     end
     kube.vm.provision "shell", inline: $script
+    kube.vm.provision "shell", inline: $script_worker_root
   end
 
 $script = <<SCRIPT
@@ -40,13 +44,48 @@ echo I am provisioning...
 sudo cp /vagrant/hosts /etc/hosts
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo cp /vagrant/kubernetes.list /etc/apt/sources.list.d/kubernetes.list
-sudo apt-get update 
+sudo apt-get update -y
 sudo apt-get install -y docker.io kubelet kubeadm kubectl kubernetes-cni
 sudo rm -rf /var/lib/kubelet/*
 echo I am turning off swap...
 sudo swapoff -a
 echo I am joining NFS...
 sudo apt-get install nfs-common -y
+SCRIPT
+
+$script_master_root = <<SCRIPT
+# create kubernetes cluster
+kubeadm init --apiserver-advertise-address 192.168.56.101 --pod-network-cidr=192.168.0.0/16
+SCRIPT
+
+$script_master_vagrant = <<SCRIPT
+# setup kubectl
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+# install Weave (overlay networking)
+export kubever=$(kubectl version | base64 | tr -d '\n')
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+
+# install k8s dashboard
+kubectl apply -f https://gist.githubusercontent.com/initcron/32ff89394c881414ea7ef7f4d3a1d499/raw/4863613585d05f9360321c7141cc32b8aa305605/kube-dashboard.yaml
+kubectl describe svc kubernetes-dashboard -n kube-system
+
+# install helm
+cd /tmp
+wget -q https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz
+tar -zxvf helm-v2.12.3-linux-amd64.tar.gz
+sudo mv linux-amd64 /opt
+sudo mv /opt/linux-amd64 /opt/helm-v2.12.3
+sudo ln -s /opt/helm-v2.12.3/helm /usr/local/bin/helm
+kubectl apply -f /vagrant/tiller-rbac-config.yaml
+helm init --service-account tiller
+SCRIPT
+
+$script_worker_root = <<SCRIPT
+# replace with actual token and hash!!
+kubeadm join 192.168.56.101:6443 --token n6qyxs.6j3y4c9ivj8vzkvf --discovery-token-ca-cert-hash sha256:a7f7ebb1fcdbd3e145727da057274da2806006e28f7c71e844a1700d7e1e2ccb
 SCRIPT
 
 end
