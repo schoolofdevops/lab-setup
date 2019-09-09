@@ -16,6 +16,7 @@
 
 | Software  | Version Tested     | License     |
 | :------------- | :------------- | :------------- |
+| Docker Desktop       | latest      | Open Source/Free |
 | Virtualbox       | 5.0.20      | Open Source/Free |
 | Vagrant | 1.8.1 | Open Source/Free |
 | Atom | 1.7.4  | Open Source/Free |
