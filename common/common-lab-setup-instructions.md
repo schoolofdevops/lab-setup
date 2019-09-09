@@ -1,6 +1,7 @@
 ## Common  Setup Instructions
 #### Softwares
 
+  * Docker Desktop
   * Virtualbox
   * Vagrant
   * Git
@@ -34,7 +35,8 @@ These instructions different from system to system, bases on the BIOS provided w
 
 | Software     | Windows Installer | OS X Installer |
 | :------------- | :--------------- | :---------------|
-| Virtualbox     |[6.0.12](https://download.virtualbox.org/virtualbox/6.0.12/VirtualBox-6.0.12-133076-Win.exe)      | [6.0.12](https://download.virtualbox.org/virtualbox/6.0.12/VirtualBox-6.0.12-133076-OSX.dmg)  
+| Docker Desktop | [install_link](https://www.docker.com/products/docker-desktop) | [install_link](https://www.docker.com/products/docker-desktop) |
+| Virtualbox     |[6.0.12](https://download.virtualbox.org/virtualbox/6.0.12/VirtualBox-6.0.12-133076-Win.exe)      | [6.0.12](https://download.virtualbox.org/virtualbox/6.0.12/VirtualBox-6.0.12-133076-OSX.dmg)  |
 | Vagrant | [2.2.5](https://releases.hashicorp.com/vagrant/2.2.5/vagrant_2.2.5_x86_64.msi) | [2.2.5](https://releases.hashicorp.com/vagrant/2.2.5/vagrant_2.2.5_x86_64.dmg) |
 | Atom | [1.7.4](https://github.com/atom/atom/releases/download/v1.7.4/AtomSetup.exe) |  [1.7.4](https://atom.io/download/mac) |
 | Git for Windows |  [2.8.3](https://github.com/git-for-windows/git/releases/download/v2.8.3.windows.1/Git-2.8.3-64-bit.exe) | Not Applicable |
